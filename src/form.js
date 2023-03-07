@@ -18,18 +18,21 @@ export const Form=()=>{
 	});
 	//console.log(watch("name"));
 	return(
+		<div className="box">
+		<h1 className="heading">Register Here</h1>
 		<form onSubmit={handleSubmit(onSubmit)}>
-		<input type="text" placeholder="Enter name" {...register("name")}/><br/>
-		<p>{errors.name?.message}</p>
-		<input type="text" placeholder="Enter email" {...register("email")} /><br/>
-		<p>{errors.email?.message}</p>
-		<input type="number" placeholder="Enter mobile number" {...register("mobile")} /><br/>
-		<p>{errors.mobile?.message}</p>
-		<input type="password" placeholder="Enter password" {...register("password")}/><br/>
-		<p>{errors.password?.message}</p>
-		<input type="password" placeholder="Retype password" {...register("con_pass")}/><br/>
-		<p>{errors.con_pass?.message}</p>
-		<input type="submit"/>
+		<input type="text" placeholder="Enter name" {...register("name")} className="inputbox"/>
+		<span>{errors.name?.message}</span>
+		<input type="text" placeholder="Enter email" {...register("email")} className="inputbox" />
+		<span>{errors.email?.message}</span>
+		<input type="number" placeholder="Enter mobile number" {...register("mobile")} className="inputbox" />
+		<span>{errors.mobile?.message}</span>
+		<input type="password" placeholder="Enter password" {...register("password")} className="inputbox"/>
+		<span>{errors.password?.message}</span>
+		<input type="password" placeholder="Retype password" {...register("con_pass")} className="inputbox"/>
+		<span>{errors.con_pass?.message}</span>
+		<input type="submit" className="button"/>
 		</form>
+		</div>
 		);
 }

@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 .App {
   text-align: center;
 }
@@ -27,8 +29,62 @@
 .App-link {
   color: #61dafb;
 }
-p{
+span{
   color:red;
+  margin-bottom: 10px;
+}
+body{
+ background-color:#f0f0f0;
+ font-family: 'Nunito', sans-serif;
+}
+.box{
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-top: 10%; 
+  margin-bottom: 10%;   
+  height:70%;
+  width:450px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:5px;
+  background:rgba(255,255,255,1);      
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+  padding:40px;
+}
+.inputbox{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  padding:10px;
+  margin-bottom:30px;
+}
+.inputbox:focus{
+   outline:none;
+   border:#da5767 2px solid;
+}
+.heading{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.button{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  margin-bottom:30px;
+  background:#da5767;
+  color:#FFF;
+  font-weight:bold;
+  font-size: 12pt;
+  transition:background .4s;
+  cursor:pointer;
+}
+.button:hover{
+  background:#FA8072; 
 }
 
 @keyframes App-logo-spin {
